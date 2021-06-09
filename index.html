@@ -12,8 +12,8 @@
 
 <body>
     <header>
-        <div>
-            <div class="entete">
+        <div class="entete">
+            <div class="reservia">
                 <img class="logo" src="images/Reservia@3x.png" alt="logo du site Reservia" />   
             </div>
             <nav>
@@ -21,20 +21,23 @@
                 <a href="#activites">Activités</a>
             </nav>
             <div class="lieninscription">
-                <a href="">Inscription</a> 
+                <a href="">S'inscrire</a> 
             </div>    
         </div>
         <div>
-            <section>
-                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                En plein centre ville ou en pleine nature<br />
+            <section class="presentation">
+                <p>
+                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                    En plein centre ville ou en pleine nature
+                </p>
                 <div>
-                    <i class="fas fa-map-marker-alt"></i>
                     <form action="" method="post">
+                        <label><i class="fas fa-map-marker-alt"></i></label>
                         <input type="text" name="ville" id=""/>
+                        <input type="submit" name ="rechercher" value="Rechercher" />
                     </form>
-                    <button type="submit" name ="rechercher" value="Rechercher"></button>
                 </div>
+
                 <div class="filtres">
                     <strong>Filtres</strong>
                         <a href=""><div class="filtreLien">
