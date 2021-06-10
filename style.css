@@ -14,6 +14,12 @@ main{
 
 a{
     text-decoration: none;
+    color:black;
+}
+
+a:hover{
+    text-decoration-line: overline;
+    color: #0065FC;
 }
 
 header{
@@ -57,7 +63,13 @@ nav{
     width: 10%;
     align-content: flex-end;
     align-items: center;
+    color: #0065FC;
 }
+
+
+/*------------ Partie avec filtres ----------*/
+
+
 
 .presentation{
     border: 1px solid indianred;
@@ -84,6 +96,12 @@ nav{
     border-radius: 18px;
     margin-left : 10px;
     padding-right: 7px;
+}
+
+.filtreLien:hover{
+    color:#DEEBFF;
+    background-color: #0065FC;
+    height: 30px;
 }
 
 .filtreLien i{
@@ -215,9 +233,14 @@ aside{
 
 #activites{
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     max-width: 100%;
     margin-top: 20px;
+}
+
+.toutesactivites{
+    display:flex;
+    flex-direction: row;
 }
 
 .carteactivite1{
@@ -260,6 +283,7 @@ figure{
 figcaption{
     margin-top: 5px;
     margin-left: 20px;
+    margin-bottom: 5px;;
     font-weight: bold;
 }
 
