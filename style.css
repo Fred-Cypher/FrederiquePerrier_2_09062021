@@ -14,19 +14,33 @@ main{
 
 a{
     text-decoration: none;
-    color:black;
+    color:initial;
 }
 
-a:hover{
-    text-decoration-line: overline;
-    color: #0065FC;
+h1{
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h2{
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h3{
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 header{
     border : 1px solid blueviolet;
     padding: 10px;
 }
-/* ------------------ En-tête du site  */ 
+
+/* ------------------ En-tête du site  ------------------ */ 
 
 .entete{
     display: flex;
@@ -40,8 +54,11 @@ header{
 }
 
 .reservia{
+    display: flex;
+    align-items: center;
     width: 65%;
     border : 1px solid green;
+    height: 65px;
 }
 
 .logo{
@@ -55,6 +72,19 @@ nav{
     width: 20%;
     justify-content: space-around;
     align-items: center;
+}
+
+nav a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color:black;
+    height: 60px;
+}
+
+nav a:hover{
+    border-top: 2px solid #0065FC;
+    color: #0065FC;
 }
 
 .lieninscription{
@@ -71,31 +101,79 @@ nav{
 
 
 
-.presentation{
+.recherche{
     border: 1px solid indianred;
     display: flex;
     flex-direction: column;
+}
 
+.ville{
+    border: 1px solid aquamarine;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: stretch;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.ville i{
+    display:flex;
+    justify-content: center; 
+    align-items: center;
+    background-color: #f2f2f2;
+    height: 35px;
+    width: 35px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px ;
+}
+
+input{
+    height: 35px;
+    width: 200px;
+    margin: 0px;
+    border-top: 2px solid #f2f2f2;
+    border-bottom: 2px solid #f2f2f2;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+::placeholder{
+    padding-left: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+button{
+    margin: 0px;
+    height: 35px;
+    width: 100px;
+    background-color: #0065FC;
+    color: #f2f2f2;
+    border: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .filtres{
     display:flex;
     flex-direction: row;
-    align-items: flex-start;
     align-items: center;
+    border: 1px solid lightsalmon;
 }
 
 .filtreLien{
     display:flex;
     align-items: center;
     justify-content: center;
-    /*flex-direction: row;*/
     border-top : 2px solid #f2f2f2;
     border-bottom: 2px solid #f2f2f2;
     border-right: 2px solid #f2f2f2;
-    border-radius: 18px;
-    margin-left : 10px;
-    padding-right: 7px;
+    border-radius: 20px;
+    margin-left : 35px;
+    padding-right: 20px;
+    height: 35px;
 }
 
 .filtreLien:hover{
@@ -110,11 +188,12 @@ nav{
     align-items: center;
     color: #0065FC;
     background-color: #DEEBFF;
-    height: 25px;
-    width: 25px;
+    background-size: cover;
+    height: 30px;
+    width: 30px;
     border-radius: 18px;
     padding : 5px;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 .info i{
@@ -133,16 +212,19 @@ nav{
 .info{
     display:flex;
     flex-direction: row;
-    align-items: flex-start;
     align-items: center;
-    margin : 5px;
+    margin-top : 5px;
+    font-size: 12px;
+    border: 1px solid lawngreen;
 }
 
 /* ---------------------  Partie hébergement ----------------*/
 
 .logement{
+    border: 1px solid darkcyan;
     display:flex;
     flex-direction: row;
+    height: 620px;
 }
 
 #hebergement{
@@ -157,16 +239,18 @@ nav{
 .hebergementtop{
     display:flex;
     flex-direction: row;
+    height: 45%;
 }
 
 .hebergementbottom{
     display:flex;
     flex-direction: row;
+    height: 45%;
 }
 
 .imghebergement{
     width: 100%;
-    height: 150px;
+    height: 55%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     object-fit: cover;
@@ -175,10 +259,17 @@ nav{
 .cartehebergement{
     background-color: white;
     width: 33%;
+    height: 80%;
     margin: 10px;
-    padding : 5px;
+    padding : 5px 5px 0px 5px;
     border-radius: 18px;
-    box-shadow: 6px 6px 6px #f2f2f2; 
+    box-shadow: 6px 6px 6px #dddddd;  
+}
+
+.description{
+    padding: 0 5px 0 5px;
+    line-height: 30px;
+    height: 30%;
 }
 
 .bluestar{
@@ -195,8 +286,8 @@ aside{
     display:flex;
     flex-direction: column;
     background-color: #f2f2f2;
-    width: 35%;
-    margin-left: 20px;
+    width: 30%;
+    margin-left: 40px;
     padding-top: 15px;
     border-radius: 18px;
 }
@@ -204,8 +295,19 @@ aside{
 .titrepop{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 25px 0 25px;
+}
+
+.cartepop{
+    display:flex;
+    flex-direction: row;
+    background-color: white;
+    margin: 10px 30px 15px 30px;
+    padding : 5px;
+    border-radius: 18px;
+    box-shadow: 6px 6px 6px #dddddd;  
 }
 
 .imgpop{
@@ -216,19 +318,16 @@ aside{
     object-fit: cover;
 }
 
-.cartepop{
-    display:flex;
-    flex-direction: row;
-    background-color: white;
-    margin: 10px;
-    padding : 5px;
-    border-radius: 18px;
-    box-shadow: 6px 6px 6px #f2f2f2;  
+.descriptionpop{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px 28px 5px 20px;
+    line-height: 25px;
 }
 
-.description{
-    margin-left: 15px;
-}
+
+
 /* ----------------- Partie Activités --------------------- */
 
 #activites{
@@ -236,25 +335,35 @@ aside{
     flex-direction: column;
     max-width: 100%;
     margin-top: 20px;
+    height: 100%;
+}
+
+.titreactivites{
+    margin-left: 15px;
 }
 
 .toutesactivites{
     display:flex;
     flex-direction: row;
+    height: 100%;
+    border: 1px solid blue;
+    padding: 0px;
 }
 
 .carteactivite1{
-    margin: 10px;
-    border-top-right-radius: 18px;
+    margin: 0 1em 0 1em;
     width: 25%;
-    /*border : 1px solid red;*/
+    height: 100%;
+    border : 1px solid red;
 }
 
 .carteactivite2{
-    margin: 10px;    
+    margin:  0 1em 0 1em;   
     display:flex;
     flex-direction: column;
     width: 25%;
+    height: 100%;
+    border: 1px solid green;
 }
 
 figure img{
@@ -276,14 +385,14 @@ figure img{
 
 figure{
     border-radius: 18px;
-    box-shadow: 6px 6px 6px #f2f2f2; 
+    box-shadow: 6px 6px 6px #dddddd; 
     margin-top: 15px;
 }
 
 figcaption{
     margin-top: 5px;
     margin-left: 20px;
-    margin-bottom: 5px;;
+    margin-bottom: 10px;
     font-weight: bold;
 }
 
