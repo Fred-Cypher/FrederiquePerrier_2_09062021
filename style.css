@@ -9,7 +9,7 @@ body{
 }
 
 main{
-    padding: 10px;
+    padding: 0.7em;
 }
 
 a{
@@ -18,26 +18,26 @@ a{
 }
 
 h1{
-    font-size: 18px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    font-size: 1.2em;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
 }
 
 h2{
-    font-size: 18px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    font-size: 1.2em;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
 }
 
 h3{
-    font-size: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    font-size: 1em;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
 }
 
 header{
     border : 1px solid blueviolet;
-    padding: 10px;
+    padding: 0.7em;
 }
 
 /* ------------------ En-tête du site  ------------------ */ 
@@ -47,10 +47,10 @@ header{
     flex-direction: row;
     justify-content: space-between;
     border: 1px solid black;
-    margin-top: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
+    margin-top: 0.7em;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+    margin-bottom: 0.7em;
 }
 
 .reservia{
@@ -58,12 +58,12 @@ header{
     align-items: center;
     width: 65%;
     border : 1px solid green;
-    height: 65px;
+    height: 4.2em;
 }
 
 .logo{
-    width : 80px;
-    height: 40px;
+    width : 5em;
+    height: 2.5em;
 }
 
 nav{
@@ -79,11 +79,11 @@ nav a{
     align-items: center;
     text-decoration: none;
     color:black;
-    height: 60px;
+    height: 3.8em;
 }
 
 nav a:hover{
-    border-top: 2px solid #0065FC;
+    border-top: 0.13em solid #0065FC;
     color: #0065FC;
 }
 
@@ -113,9 +113,9 @@ nav a:hover{
     align-content: center;
     align-items: center;
     justify-content: stretch;
-    height: 40px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    height: 2.5em;
+    margin-top: 1.3em;
+    margin-bottom: 1.3em;
 }
 
 .ville i{
@@ -123,37 +123,37 @@ nav a:hover{
     justify-content: center; 
     align-items: center;
     background-color: #f2f2f2;
-    height: 35px;
-    width: 35px;
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px ;
+    height: 2.25em;
+    width: 2.25em;
+    border-bottom-left-radius: 0.7em;
+    border-top-left-radius: 0.7em ;
 }
 
 input{
-    height: 35px;
-    width: 200px;
+    height: 2.25em;
+    width: 12.5em;
     margin: 0px;
-    border-top: 2px solid #f2f2f2;
-    border-bottom: 2px solid #f2f2f2;
+    border-top: 0.13em solid #f2f2f2;
+    border-bottom: 0.13em solid #f2f2f2;
     border-left: 0px;
     border-right: 0px;
 }
 
 ::placeholder{
-    padding-left: 10px;
+    padding-left: 0.7em;
     color: black;
     font-weight: bold;
 }
 
 button{
     margin: 0px;
-    height: 35px;
-    width: 100px;
+    height: 2.4em;
+    width: 6.3em;
     background-color: #0065FC;
     color: #f2f2f2;
     border: 0px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-top-right-radius: 0.7em;
+    border-bottom-right-radius: 0.7em;
 }
 
 .filtres{
@@ -163,23 +163,29 @@ button{
     border: 1px solid lightsalmon;
 }
 
+.barrefiltres{
+    display:flex;
+    flex-direction: row;
+}
+
 .filtreLien{
     display:flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    border-top : 2px solid #f2f2f2;
-    border-bottom: 2px solid #f2f2f2;
-    border-right: 2px solid #f2f2f2;
-    border-radius: 20px;
-    margin-left : 35px;
-    padding-right: 20px;
-    height: 35px;
+    border-top : 0.13em solid #f2f2f2;
+    border-bottom: 0.13em solid #f2f2f2;
+    border-right: 0.13em solid #f2f2f2;
+    border-radius: 1.3em;
+    margin-left : 2.3em;
+    padding-right: 1.3em;
+    height: 2.3em;
 }
 
 .filtreLien:hover{
     color:#DEEBFF;
     background-color: #0065FC;
-    height: 30px;
+    height: 1.9em;
 }
 
 .filtreLien i{
@@ -189,32 +195,32 @@ button{
     color: #0065FC;
     background-color: #DEEBFF;
     background-size: cover;
-    height: 30px;
-    width: 30px;
-    border-radius: 18px;
-    padding : 5px;
-    margin-right: 10px;
+    height: 1.8em;
+    width: 1.8em;
+    border-radius: 1.3em;
+    padding : 0.4em;
+    margin-right: 0.7em;
 }
 
 .info i{
     display:flex;
     justify-content: center; 
     align-items: center;
-    height: 15px;
-    width: 15px;
+    height: 1em;
+    width: 1em;
     color:#0065FC;
-    border : 2px solid #f2f2f2;
-    border-radius: 15px;
-    padding : 3px;
-    margin-right: 5px;
+    border : 0.2em solid #f2f2f2;
+    border-radius: 1em;
+    padding : 0.2em;
+    margin: 1em 0.4em 1em 0;
 }
 
 .info{
     display:flex;
     flex-direction: row;
     align-items: center;
-    margin-top : 5px;
-    font-size: 12px;
+    margin-top : 0.312em;
+    font-size: 0.9em;
     border: 1px solid lawngreen;
 }
 
@@ -224,51 +230,61 @@ button{
     border: 1px solid darkcyan;
     display:flex;
     flex-direction: row;
-    height: 620px;
+    height: 38em;
 }
 
 #hebergement{
     display:flex;
     flex-direction: column;
+    justify-content: flex-start;
     background-color: #f2f2f2;
     width: 65%;
-    padding: 15px;
-    border-radius: 18px;
+    padding: 1.5em 0 1.5em 0;
+    border-radius: 1.2em;
+}
+
+.titrehebergement{
+    padding-left: 1.7em;
 }
 
 .hebergementtop{
     display:flex;
     flex-direction: row;
-    height: 45%;
+    height: 43%;
+    margin-left: 0.6em;
+    margin-right: 0.6em;
 }
 
 .hebergementbottom{
     display:flex;
     flex-direction: row;
-    height: 45%;
-}
-
-.imghebergement{
-    width: 100%;
-    height: 55%;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    object-fit: cover;
+    height: 43%;
+    margin-left: 0.6em;
+    margin-right: 0.6em;
 }
 
 .cartehebergement{
     background-color: white;
     width: 33%;
-    height: 80%;
-    margin: 10px;
-    padding : 5px 5px 0px 5px;
-    border-radius: 18px;
-    box-shadow: 6px 6px 6px #dddddd;  
+    height: 85%;
+    margin-right: 1em;
+    margin-left: 1em;
+    padding : 0.3em 0.3em 0px 0.4em;
+    border-radius: 1.2em;
+    box-shadow: 0.3em 0.3em 0.3em #dddddd;  
+}
+
+.imghebergement{
+    width: 100%;
+    height: 54%;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    object-fit: cover;
 }
 
 .description{
-    padding: 0 5px 0 5px;
-    line-height: 30px;
+    padding: 0 0.3em 0 0.3em;
+    line-height: 1.8em;
     height: 30%;
 }
 
@@ -280,6 +296,11 @@ button{
     color: #f2f2f2;
 }
 
+.afficher{
+    font-weight: bold;
+    margin-left: 1.7em;
+}
+
 /* -- Aside -- */
 
 aside{
@@ -287,9 +308,9 @@ aside{
     flex-direction: column;
     background-color: #f2f2f2;
     width: 30%;
-    margin-left: 40px;
-    padding-top: 15px;
-    border-radius: 18px;
+    margin-left: 2.5em;
+    padding-top: 1em;
+    border-radius: 1.2em;
 }
 
 .titrepop{
@@ -297,24 +318,25 @@ aside{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 25px 0 25px;
+    padding: 0 1.9em 0 1.9em;
 }
 
 .cartepop{
     display:flex;
     flex-direction: row;
+    height: 33%;
     background-color: white;
-    margin: 10px 30px 15px 30px;
-    padding : 5px;
-    border-radius: 18px;
-    box-shadow: 6px 6px 6px #dddddd;  
+    margin: 0.7em 1.9em 1em 1.9em;
+    padding : 0.3em;
+    border-radius: 1.2em;
+    box-shadow: 0.3em 0.3em 0.3em #dddddd;  
 }
 
 .imgpop{
-    width: 40%;
-    height: 150px;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
+    width: 7.5em;
+    max-height: 9em;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
     object-fit: cover;
 }
 
@@ -322,8 +344,8 @@ aside{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 10px 28px 5px 20px;
-    line-height: 25px;
+    margin: 0.6em 1.8em 0.3em 1em;
+    line-height: 1.3em;
 }
 
 
@@ -334,32 +356,36 @@ aside{
     display:flex;
     flex-direction: column;
     max-width: 100%;
-    margin-top: 20px;
-    height: 100%;
-}
-
-.titreactivites{
-    margin-left: 15px;
+    margin-top: 1.25em;
 }
 
 .toutesactivites{
     display:flex;
     flex-direction: row;
-    height: 100%;
+    height: 30em;
     border: 1px solid blue;
     padding: 0px;
 }
 
 .carteactivite1{
-    margin: 0 1em 0 1em;
+    margin-right: 2em;
     width: 25%;
     height: 100%;
     border : 1px solid red;
 }
 
 .carteactivite2{
-    margin:  0 1em 0 1em;   
-    display:flex;
+    margin-right: 2em;  
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 100%;
+    border: 1px solid purple;
+}
+
+.carteactivite3{
+    margin-right: 2em;  
+    display: flex;
     flex-direction: column;
     width: 25%;
     height: 100%;
@@ -367,32 +393,49 @@ aside{
 }
 
 figure img{
-    border-top-left-radius: 18px;
-    border-top-right-radius: 18px;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
     object-fit: cover;
 }
 
 .carteactivite1 img{
-    height: 330px;
+    height: 24em;
     width: 100%;
-    /*margin-top: 10px;*/
 }
 
-.carteactivite2 img{
-    height: 150px;
+.carteactivite2 .imagetop{
+    height: 13em;
     width: 100%;
+}
+
+.carteactivite2 .imagebottom{
+    height: 7em;
+    width: 100%;
+}
+
+.carteactivite2 figure{
+    margin-bottom: 1.5em;
+}
+
+.carteactivite3 img{
+    height: 10em;
+    width: 100%;
+}
+
+.carteactivite3 figure{
+    margin-bottom: 1.5em;
 }
 
 figure{
-    border-radius: 18px;
-    box-shadow: 6px 6px 6px #dddddd; 
-    margin-top: 15px;
+    border-radius: 1.2em;
+    box-shadow: 0.3em 0.3em 0.3em #dddddd; 
 }
 
 figcaption{
-    margin-top: 5px;
-    margin-left: 20px;
-    margin-bottom: 10px;
+    margin-top: 0.3em;
+    margin-left: 1.25em;
+    margin-bottom: 0.7em;
+    height: 2em;
     font-weight: bold;
 }
 
@@ -404,12 +447,16 @@ footer{
     justify-content: space-around;
     flex-direction: row;
     width: 100%;
+    padding: 1.5em;
 }
 
 footer div{
     width: 33%;
+    line-height: 1.7em;
 }
 
 h3{
-    margin-bottom: 5px;
+    margin-bottom: 0.3em;
 }
+
+
