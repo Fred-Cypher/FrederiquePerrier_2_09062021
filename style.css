@@ -5,7 +5,7 @@
 
 body{
     font-family: 'Raleway', sans-serif;
-    /*background-color: bisque;*/
+    overflow-x: hidden;
 }
 
 main{
@@ -118,7 +118,7 @@ nav a:hover{
     margin-bottom: 1.3em;
 }
 
-.ville i{
+.marqueur{
     display:flex;
     justify-content: center; 
     align-items: center;
@@ -145,7 +145,7 @@ input{
     font-weight: bold;
 }
 
-button{
+.texte{
     margin: 0px;
     height: 2.4em;
     width: 6.3em;
@@ -154,6 +154,14 @@ button{
     border: 0px;
     border-top-right-radius: 0.7em;
     border-bottom-right-radius: 0.7em;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.loupe{
+    visibility:hidden;
 }
 
 .filtres{
@@ -333,8 +341,8 @@ aside{
 }
 
 .imgpop{
-    width: 7.5em;
-    max-height: 9em;
+    width: 35%;
+    height: 9em;
     border-top-left-radius: 1em;
     border-bottom-left-radius: 1em;
     object-fit: cover;
@@ -343,9 +351,10 @@ aside{
 .descriptionpop{
     display: flex;
     flex-direction: column;
+    height: 8em;
     justify-content: space-between;
     margin: 0.6em 1.8em 0.3em 1em;
-    line-height: 1.3em;
+    line-height: 1.5em;
 }
 
 
@@ -457,6 +466,199 @@ footer div{
 
 h3{
     margin-bottom: 0.3em;
+}
+
+/* ----------------- Affichage téléphone ---------*/
+
+
+@media all and (max-device-width: 480px)
+{
+    body{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: auto;
+        height: min-content;
+    }
+
+    main{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: auto;
+        padding: 0;
+        margin: 0;
+    }
+
+    .recherche{
+        order: -1;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    #activites{
+        order: 1;
+        flex: 3 0 100%;
+    }
+
+    .entete{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .reservia{
+        order: -1;
+        flex: 1 0 60%;
+    }
+
+    .lieninscription{
+        order: -1;
+        flex: 2 0 30%;
+        justify-content: center;
+    }
+
+    nav{
+        order:1;
+        flex: 3 0 10%;
+    }
+
+    nav a:hover{
+        border-bottom: 0.13em solid #0065FC;
+        border-top: none;
+        color: #0065FC;
+    }
+
+    .texte{
+        display: none;
+    }
+    .loupe{
+        visibility:visible;
+        margin: 0px;
+        height: 2.4em;
+        width: 2.4em;
+        background-color: #0065FC;
+        color: #f2f2f2;
+        border: 0px;
+        border-top-right-radius: 0.7em;
+        border-bottom-right-radius: 0.7em;
+    }
+
+    .filtres{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .barrefiltres{
+        flex-wrap: wrap;
+        margin-left: 0;
+    }
+
+    .filtreLien{
+        margin-left: 0;
+        margin-top: 1em;
+        margin-right: 2em;
+    }
+
+    .info{
+        margin: 1em 0 1em 0;
+    }
+
+    .logement{
+        order: -1;
+        flex: 2 0 100%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: auto;
+    }
+
+    #hebergement{
+        order: 1;
+        flex: 2 0 10%;
+        width: auto;
+        height: auto;
+        background-color: white;
+        padding: 0;
+    }
+
+    .hebergementtop{
+        flex-direction: column;
+    }
+
+    .hebergementbottom{
+        flex-direction: column;
+    }
+    
+    .cartehebergement{
+        width: auto;
+        height: 15%;
+        margin-bottom: 1em;
+    }
+
+    .imghebergement{
+        height: 8em;
+    }
+
+    aside{
+        order: -1;
+        flex: 1 0 10%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: auto;
+        width: auto;
+        margin-left: 0;
+        border-radius: 0;
+    }
+
+    .cartepop{
+        width: auto;
+        height: 15%;
+        margin-bottom: 1em;
+    }
+
+    .imgpop{
+        height: 9em;
+    }
+
+    .toutesactivites{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .carteactivite1,
+    .carteactivite2,
+    .carteactivite3{
+        width: auto;
+        margin-bottom: 1em;
+        margin-right: 1.3em;
+        margin-left: 1.3em;
+        height: auto;
+    }
+
+    .carteactivite1 img,
+    .carteactivite2 .imagetop,
+    .carteactivite2 .imagebottom,
+    .carteactivite3 img{
+        height: 10em;
+        width: 100%;
+    }
+
+
+    footer{
+        flex-direction: column;
+        width: auto;
+    }
+
+    footer div{
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+
 }
 
 
