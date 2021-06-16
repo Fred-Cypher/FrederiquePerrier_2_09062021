@@ -6,10 +6,12 @@
 body{
     font-family: 'Raleway', sans-serif;
     overflow-x: hidden;
+    width: auto;
 }
 
 main{
     padding: 0.7em;
+    margin-left: 1em;
 }
 
 a{
@@ -38,6 +40,7 @@ h3{
 header{
     border : 1px solid blueviolet;
     padding: 0.7em;
+    margin-left: 1em;
 }
 
 /* ------------------ En-tête du site  ------------------ */ 
@@ -145,6 +148,10 @@ input{
     font-weight: bold;
 }
 
+button:hover{
+    cursor: pointer;
+}
+
 .texte{
     margin: 0px;
     height: 2.4em;
@@ -154,10 +161,6 @@ input{
     border: 0px;
     border-top-right-radius: 0.7em;
     border-bottom-right-radius: 0.7em;
-}
-
-button:hover{
-    cursor: pointer;
 }
 
 .loupe{
@@ -227,7 +230,7 @@ button:hover{
     display:flex;
     flex-direction: row;
     align-items: center;
-    margin-top : 0.312em;
+    margin-top : 0.3em;
     font-size: 0.9em;
     border: 1px solid lawngreen;
 }
@@ -312,7 +315,7 @@ button:hover{
 /* -- Aside -- */
 
 aside{
-    display:flex;
+    display: flex;
     flex-direction: column;
     background-color: #f2f2f2;
     width: 30%;
@@ -327,6 +330,10 @@ aside{
     justify-content: space-between;
     align-items: center;
     padding: 0 1.9em 0 1.9em;
+}
+
+.cartespop{
+    height: 75%;
 }
 
 .cartepop{
@@ -373,10 +380,10 @@ aside{
     flex-direction: row;
     height: 30em;
     border: 1px solid blue;
-    padding: 0px;
+    padding: 0;
 }
 
-.carteactivite1{
+.carteactivite1, .carteactivite3{
     margin-right: 2em;
     width: 25%;
     height: 100%;
@@ -392,7 +399,7 @@ aside{
     border: 1px solid purple;
 }
 
-.carteactivite3{
+.carteactivite4{
     margin-right: 2em;  
     display: flex;
     flex-direction: column;
@@ -407,7 +414,8 @@ figure img{
     object-fit: cover;
 }
 
-.carteactivite1 img{
+.carteactivite1 img,
+.carteactivite3 img{
     height: 24em;
     width: 100%;
 }
@@ -426,12 +434,12 @@ figure img{
     margin-bottom: 1.5em;
 }
 
-.carteactivite3 img{
+.carteactivite4 img{
     height: 10em;
     width: 100%;
 }
 
-.carteactivite3 figure{
+.carteactivite4 figure{
     margin-bottom: 1.5em;
 }
 
@@ -453,14 +461,14 @@ figcaption{
 footer{
     background-color: #f2f2f2;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;
-    width: 100%;
+    width: auto;
     padding: 1.5em;
 }
 
 footer div{
-    width: 33%;
+    width: 25%;
     line-height: 1.7em;
 }
 
@@ -471,7 +479,7 @@ h3{
 /* ----------------- Affichage téléphone ---------*/
 
 
-@media all and (max-device-width: 480px)
+@media screen and (max-width: 600px)
 {
     body{
         display: flex;
@@ -491,26 +499,27 @@ h3{
         margin: 0;
     }
 
-    .recherche{
-        order: -1;
-        padding-left: 1em;
-        padding-right: 1em;
-    }
+    header{
+        margin :0;
+        }
 
-    #activites{
-        order: 1;
-        flex: 3 0 100%;
-    }
-
+    
     .entete{
-        display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
     }
 
     .reservia{
         order: -1;
-        flex: 1 0 60%;
+    }
+
+    nav{
+        order:1;
+        flex: 3 0 100%;
+    }
+
+    nav a:hover{
+        border-bottom: 0.13em solid #0065FC;
+        border-top: none;
     }
 
     .lieninscription{
@@ -519,17 +528,11 @@ h3{
         justify-content: center;
     }
 
-    nav{
-        order:1;
-        flex: 3 0 10%;
+    .recherche{
+        order: -1;
+        padding-left: 1em;
+        padding-right: 1em;
     }
-
-    nav a:hover{
-        border-bottom: 0.13em solid #0065FC;
-        border-top: none;
-        color: #0065FC;
-    }
-
     .texte{
         display: none;
     }
@@ -557,9 +560,7 @@ h3{
     }
 
     .filtreLien{
-        margin-left: 0;
-        margin-top: 1em;
-        margin-right: 2em;
+        margin : 1em 2em 0 0;
     }
 
     .info{
@@ -568,7 +569,6 @@ h3{
 
     .logement{
         order: -1;
-        flex: 2 0 100%;
         flex-direction: column;
         flex-wrap: nowrap;
         height: auto;
@@ -576,7 +576,6 @@ h3{
 
     #hebergement{
         order: 1;
-        flex: 2 0 10%;
         width: auto;
         height: auto;
         background-color: white;
@@ -603,8 +602,6 @@ h3{
 
     aside{
         order: -1;
-        flex: 1 0 10%;
-        flex-direction: column;
         flex-wrap: nowrap;
         height: auto;
         width: auto;
@@ -618,20 +615,20 @@ h3{
         margin-bottom: 1em;
     }
 
-    .imgpop{
-        height: 9em;
-    }
-
     .toutesactivites{
-        display: flex;
         flex-direction: column;
         max-width: 100%;
         height: auto;
     }
 
+    .titreactivites{
+        margin-left: 1.5em;
+    }
+
     .carteactivite1,
     .carteactivite2,
-    .carteactivite3{
+    .carteactivite3,
+    .carteactivite4{
         width: auto;
         margin-bottom: 1em;
         margin-right: 1.3em;
@@ -642,7 +639,8 @@ h3{
     .carteactivite1 img,
     .carteactivite2 .imagetop,
     .carteactivite2 .imagebottom,
-    .carteactivite3 img{
+    .carteactivite3 img,
+    .carteactivite4 img{
         height: 10em;
         width: 100%;
     }
@@ -650,15 +648,155 @@ h3{
 
     footer{
         flex-direction: column;
-        width: auto;
     }
 
     footer div{
         width: 100%;
         margin-bottom: 1em;
     }
-
-
 }
 
+/*------------- Affichage Tablette ---------- */ 
 
+@media screen and (min-width: 601px) and (max-width: 1024px) 
+{
+    body{
+        display: flex;
+        flex-direction: column;
+        height: min-content;
+    }
+
+    main{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: auto;
+        padding: 0;
+        margin: 0;
+    }
+
+    header{
+        margin: 0;
+        padding: 0;
+    }
+
+    .entete{
+        flex-wrap: wrap;
+    }
+
+    .reservia{
+        width: 100%;
+        padding-left: 3em;
+    }
+
+    nav{
+        width: 50%;
+    }
+
+    .lieninscription{
+        width: 40%;
+        justify-content: center;
+    }
+
+    .recherche{
+        padding-left: 1em;
+        width: auto;
+    }
+
+    .filtres{
+        flex-direction: column;
+        align-items: flex-start;
+        height: 5.3em;
+        justify-content: space-evenly;
+    }
+
+    .filtreLien{
+        padding: 0;
+        margin: 0 2.3em 0 0.1em;
+    }
+
+    .logement{
+        flex-direction: column;
+        height: auto;
+    }
+
+    #hebergement{
+        order: 1;
+        width: auto;
+        margin-top: 1em;
+    }
+
+    .imghebergement{
+        height: 7em;
+    }
+
+    .hebergementtop, .hebergementbottom{
+        height: 30%;
+        margin-bottom: 1.2em;
+    }
+
+    .cartehebergement{
+        height: 80%;
+        margin: 0 0.3em 0 0.3em;
+    }
+
+    aside{
+        width: auto;
+        margin: 0;
+    }
+
+    .cartespop{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 1em;
+    }
+
+    .cartepop{
+        width: 33%;
+        margin: 0 0.5em 0 0.3em;
+    }
+
+    .descriptionpop{
+        margin: 0.4em 0.5em 0.2em 0.5em;
+    }
+
+    .toutesactivites{
+        flex-wrap: wrap;
+        height: auto;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .titreactivites{
+        margin-left: 1.5em;
+    }
+
+    .carteactivite1,
+    .carteactivite2,
+    .carteactivite3,
+    .carteactivite4{
+        width: 40%;
+        margin: 1em 2em 0.5em 2em ;
+    }
+
+    .carteactivite1 img,
+    .carteactivite2 .imagetop,
+    .carteactivite2 .imagebottom,
+    .carteactivite3 img,
+    .carteactivite4 img{
+        height: 7em;
+    }
+    
+    .carteactivite1{
+        order:-1;
+    }
+    .carteactivite3{
+        order:-1;
+    }
+    
+    footer div{
+        width: auto;
+        margin-right: 2em;
+    }
+}
