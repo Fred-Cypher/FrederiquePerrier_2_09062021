@@ -16,7 +16,7 @@ main{
 
 a{
     text-decoration: none;
-    color:initial;
+    color: initial;
 }
 
 h1{
@@ -72,17 +72,22 @@ header{
 nav{
     display: flex;
     border : 1px solid red;
-    width: 20%;
-    justify-content: space-around;
+    width: 25%;
     align-items: center;
+    justify-content: center;
 }
 
 nav a{
     display: flex;
     align-items: center;
+    justify-content: center;
     text-decoration: none;
     color:black;
     height: 3.8em;
+}
+
+.ancre{
+    width: 50%;
 }
 
 nav a:hover{
@@ -99,6 +104,14 @@ nav a:hover{
     color: #0065FC;
 }
 
+.lieninscription a{
+    color: #0065FC;
+    font-weight: bold;
+}
+
+.lieninscription a:hover{
+    font-size: 1.2em;
+}
 
 /*------------ Partie avec filtres ----------*/
 
@@ -312,7 +325,7 @@ button:hover{
     margin-left: 1.7em;
 }
 
-/* -- Aside -- */
+/* ----- Aside ----- */
 
 aside{
     display: flex;
@@ -476,6 +489,9 @@ h3{
     margin-bottom: 0.3em;
 }
 
+ul{
+    list-style: none;
+}
 /* ----------------- Affichage téléphone ---------*/
 
 

@@ -18,17 +18,24 @@
                 <img class="logo" src="images/Reservia.svg" alt="logo du site Reservia" />   
             </div>
             <nav>
-                <a href="#hebergement">Hébergements</a>
-                <a href="#activites">Activités</a>
+                <div class="ancre">
+                    <a href="#hebergement">Hébergements</a>
+                </div>
+                <div class="ancre">
+                    <a href="#activites">Activités</a>
+                </div>
+                
             </nav>
             <div class="lieninscription">
-                S'inscrire
+                <a href="">S'inscrire</a>
             </div>    
         </div>   
     </header>
 
 
     <main>
+            <!-- Chapeau de la page web -->
+
         <section class="recherche">
             <div>
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
@@ -38,7 +45,10 @@
                 <div class="marqueur">
                     <i class="fas fa-map-marker-alt"></i>
                 </div>
-                <form action="" method="POST">
+
+                <!-- Formulaire de recherche de ville -->
+
+                <form action="#" method="POST">
                     <input type="text" name="ville" placeholder="Marseille, France"/>
                     <button class="texte" type="submit" name ="rechercher" value="Rechercher">Rechercher</button>
                     <button class="loupe" type="submit" name ="rechercher" value="Rechercher"><i class="fas fa-search"></i></button>
@@ -71,6 +81,8 @@
             </div>
         </section>
 
+        <!-- Section regroupant les cartes des hôtels et auberges de la ville sélectionnée -->
+
         <section class="logement">   
             <div id="hebergement">
                 <div class="titrehebergement">
@@ -78,7 +90,7 @@
                 </div>
                 <div class="hebergementtop">
                     <div class="cartehebergement">
-                        <a href="">
+                        <a href="#">
                             <img src="images/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="imghebergement" alt="Chambre de l'Auberge de la Cannebière"/>
                             <div class="description">
                                 <strong>Auberge la Cannebière</strong><br />
@@ -92,7 +104,7 @@
                         </a>
                     </div>
                     <div class="cartehebergement">
-                        <a href="">
+                        <a href="#">
                             <img src="images/fred-kleber-gTbaxaVLvsg-unsplash.jpg" class="imghebergement" alt="Chambre de l'Hôtel du port" />
                             <div class="description">
                                 <strong>Hôtel du port</strong><br />
@@ -106,7 +118,7 @@
                         </a>
                     </div>
                     <div class="cartehebergement">
-                        <a href=""> 
+                        <a href="#"> 
                             <img src="images/reisetopia-B8WIgxA_PFU-unsplash.jpg" class="imghebergement" alt="Chambre de l'Hôtel des mouettes" />
                             <div class="description">
                                 <strong>Hôtel des mouettes</strong><br />
@@ -123,7 +135,7 @@
 
                 <div class="hebergementbottom">
                     <div class="cartehebergement">
-                        <a href="">
+                        <a href="#">
                             <img src="images/annie-spratt-Eg1qcIitAuA-unsplash.jpg" class="imghebergement" alt="Chambre de l'Hôtel de la mer" />
                         <div class="description">
                             <strong>Hôtel de la mer</strong><br />
@@ -138,7 +150,7 @@
                     </div>
 
                     <div class="cartehebergement">
-                        <a href="">
+                        <a href="#">
                             <img src="images/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" class="imghebergement" alt="Chambre de l'Hôtel du Panier" />
                             <div class="description">
                                 <strong>Auberge Le Panier</strong><br />
@@ -152,7 +164,7 @@
                         </a>   
                     </div>
                     <div class="cartehebergement">
-                        <a href="">
+                        <a href="#">
                             <img src="images/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" class="imghebergement" alt="Chmabre de l'Hôtel chez Amina" />
                         <div class="description">
                             <strong>Hôtel chez Amina</strong><br />
@@ -168,6 +180,8 @@
                 </div>
                 <div class="afficher"><strong>Afficher plus</strong></div>
             </div>
+
+            <!-- Partie regroupant les hébergements les plus populaires de la ville -->
 
             <aside>
                 <div class="titrepop">
@@ -227,11 +241,13 @@
             </aside>
         </section>
             
+
+        <!-- Partie présentant les différentes acitivtés de la ville -->
         <section id="activites">
             <div class="titreactivites"><h2>Activités à Marseille</h2></div>
             <div class="toutesactivites">
                 <div class="carteactivite1">
-                    <a href="">
+                    <a href="#">
                         <figure>
                             <img src="images/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Photo du vieux port de Marseille"/>
                             <figcaption>Vieux Port</figcaption>
@@ -239,13 +255,13 @@
                     </a>
                 </div>
                 <div class="carteactivite2">
-                    <a href="">
+                    <a href="#">
                         <figure>
                             <img class="imagetop" src="images/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Photo du fort de Pomègues"/>
                             <figcaption>Fort de Pomègues</figcaption>
                         </figure>
                     </a>
-                    <a href="">
+                    <a href="#">
                         <figure>
                             <img class="imagebottom" src="images/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Photo des Îles du Frioul"/>
                             <figcaption>Île du Frioul</figcaption>
@@ -254,7 +270,7 @@
                     
                 </div>
                 <div class="carteactivite3">
-                    <a href="">
+                    <a href="#">
                         <figure>
                         <img src="images/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Photo du parc national des Calanques"/>
                         <figcaption>Parc National des Calanques</figcaption>
@@ -262,13 +278,13 @@
                     </a>
                 </div>
                 <div class="carteactivite4">
-                    <a href="">
+                    <a href="#">
                         <figure>
                             <img src="images/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Photo de Notre-Dame-de-La-Garde"/>
                             <figcaption>Notre-Dame-de-la-Garde</figcaption>
                         </figure>
                     </a>
-                    <a href="">
+                    <a href="#">
                         <figure>
                             <img src="images/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Photo du parc Longchamp"/>
                             <figcaption>Parc Longchamp</figcaption>
@@ -282,20 +298,26 @@
     <footer>
         <div>
             <h3>A propos</h3>
-            Fonctionnement du site <br />
-            Conditions générales de vente <br />
-            Données et confidentialité
+            <ul>
+                <li>Fonctionnement du site</li>
+                <li>Conditions générales de vente</li>
+                <li>Données et confidentialité</li>
+            </ul>
         </div>
         <div>
             <h3>Nos hébergements</h3>
-            Charte qualité <br />
-            Soumettre votre hôtel
+            <ul>
+                <li>Charte qualité</li>
+                <li>Soumettre votre hôtel</li>
+            </ul>
             
         </div>
         <div>
             <h3>Assistance</h3>
-            Centre d'aide <br />
-            Nous contacter            
+            <ul>
+                <li>Centre d'aide</li>
+                <li>Nous contacter</li>
+            </ul>
         </div>
 
     </footer>
