@@ -80,7 +80,10 @@ nav a{
     text-decoration: none;
     color:black;
     height: 3.8em;
+    border-bottom : 0.13em solid white;
+    border-top: 0.13em solid white;
 }
+
 
 .ancre{
     width: 50%;
@@ -142,11 +145,11 @@ nav a:hover{
 input{
     height: 2.25em;
     width: 12.5em;
-    margin: 0px;
+    margin: 0;
     border-top: 0.13em solid #f2f2f2;
     border-bottom: 0.13em solid #f2f2f2;
-    border-left: 0px;
-    border-right: 0px;
+    border-left: 0;
+    border-right: 0;
 }
 
 ::placeholder{
@@ -160,12 +163,12 @@ button:hover{
 }
 
 .texte{
-    margin: 0px;
+    margin: 0;
     height: 2.4em;
     width: 6.3em;
     background-color: #0065FC;
     color: #f2f2f2;
-    border: 0px;
+    border: 0;
     border-top-right-radius: 0.7em;
     border-bottom-right-radius: 0.7em;
 }
@@ -206,7 +209,6 @@ button:hover{
 .filtreLien:hover{
     color:#DEEBFF;
     background-color: #0065FC;
-    height: 1.9em;
 }
 
 .filtreLien i{
@@ -288,7 +290,7 @@ button:hover{
     height: 85%;
     margin-right: 1em;
     margin-left: 1em;
-    padding : 0.3em 0.3em 0px 0.4em;
+    padding : 0.3em 0.3em 0 0.4em;
     border-radius: 1.2em;
     box-shadow: 0.3em 0.3em 0.3em #dddddd;  
 }
@@ -492,10 +494,12 @@ h3{
 ul{
     list-style: none;
 }
+
+
 /* ----------------- Affichage téléphone ---------*/
 
 
-@media screen and (max-width: 600px)
+@media screen and (max-width: 750px)
 {
     body{
         display: flex;
@@ -535,7 +539,7 @@ ul{
 
     nav a:hover{
         border-bottom: 0.13em solid #0065FC;
-        border-top: none;
+        border-top: 0.13em solid white;
     }
 
     .lieninscription{
@@ -555,14 +559,21 @@ ul{
     }
     .loupe{
         visibility:visible;
-        margin: 0px;
+        margin: 0;
         height: 2.4em;
         width: 2.4em;
         background-color: #0065FC;
         color: #f2f2f2;
-        border: 0px;
+        border: 0;
         border-top-right-radius: 0.7em;
+        border-top-left-radius: 0.7em;
         border-bottom-right-radius: 0.7em;
+        border-bottom-left-radius: 0.7em;
+    }
+
+    .loupe:hover{
+        height: 2.5em;
+        width: 2.5em;
     }
 
     .filtres{
@@ -680,7 +691,7 @@ ul{
 
 /*------------- Affichage Tablette ---------- */ 
 
-@media screen and (min-width: 601px) and (max-width: 1024px) 
+@media screen and (min-width: 750px) and (max-width: 1024px) 
 {
     body{
         display: flex;
@@ -722,7 +733,7 @@ ul{
     }
 
     .recherche{
-        padding-left: 1em;
+        padding-left: 1em; 
         width: auto;
     }
 
@@ -734,7 +745,7 @@ ul{
     }
 
     .filtreLien{
-        padding: 0;
+        padding-right: 0.3em;
         margin: 0 2.3em 0 0.1em;
     }
 
