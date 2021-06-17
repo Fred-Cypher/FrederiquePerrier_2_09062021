@@ -38,7 +38,6 @@ h3{
 }
 
 header{
-    border : 1px solid blueviolet;
     padding: 0.7em;
     margin-left: 1em;
 }
@@ -49,7 +48,6 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border: 1px solid black;
     margin-top: 0.7em;
     padding-top: 0.7em;
     padding-bottom: 0.7em;
@@ -60,18 +58,16 @@ header{
     display: flex;
     align-items: center;
     width: 65%;
-    border : 1px solid green;
     height: 4.2em;
 }
 
 .logo{
-    width : 5em;
-    height: 2.5em;
+    width : 6em;
+    height: 3em;
 }
 
 nav{
     display: flex;
-    border : 1px solid red;
     width: 25%;
     align-items: center;
     justify-content: center;
@@ -96,11 +92,11 @@ nav a:hover{
 }
 
 .lieninscription{
-    border : 1px solid blue;
     display: flex;
     width: 10%;
     align-content: flex-end;
     align-items: center;
+    padding-left: 2em;
     color: #0065FC;
 }
 
@@ -118,13 +114,11 @@ nav a:hover{
 
 
 .recherche{
-    border: 1px solid indianred;
     display: flex;
     flex-direction: column;
 }
 
 .ville{
-    border: 1px solid aquamarine;
     display: flex;
     align-content: center;
     align-items: center;
@@ -176,6 +170,10 @@ button:hover{
     border-bottom-right-radius: 0.7em;
 }
 
+.texte:hover{
+    font-size: 0.95em;
+}
+
 .loupe{
     visibility:hidden;
 }
@@ -184,7 +182,6 @@ button:hover{
     display:flex;
     flex-direction: row;
     align-items: center;
-    border: 1px solid lightsalmon;
 }
 
 .barrefiltres{
@@ -245,13 +242,11 @@ button:hover{
     align-items: center;
     margin-top : 0.3em;
     font-size: 0.9em;
-    border: 1px solid lawngreen;
 }
 
 /* ---------------------  Partie hébergement ----------------*/
 
 .logement{
-    border: 1px solid darkcyan;
     display:flex;
     flex-direction: row;
     height: 38em;
@@ -296,6 +291,10 @@ button:hover{
     padding : 0.3em 0.3em 0px 0.4em;
     border-radius: 1.2em;
     box-shadow: 0.3em 0.3em 0.3em #dddddd;  
+}
+
+.cartehebergement:hover{
+    box-shadow: 0.8em 0.8em 0.8em #c5c5c5; 
 }
 
 .imghebergement{
@@ -392,7 +391,6 @@ aside{
     display:flex;
     flex-direction: row;
     height: 30em;
-    border: 1px solid blue;
     padding: 0;
 }
 
@@ -400,7 +398,6 @@ aside{
     margin-right: 2em;
     width: 25%;
     height: 100%;
-    border : 1px solid red;
 }
 
 .carteactivite2{
@@ -409,7 +406,6 @@ aside{
     flex-direction: column;
     width: 25%;
     height: 100%;
-    border: 1px solid purple;
 }
 
 .carteactivite4{
@@ -418,7 +414,6 @@ aside{
     flex-direction: column;
     width: 25%;
     height: 100%;
-    border: 1px solid green;
 }
 
 figure img{
@@ -437,6 +432,7 @@ figure img{
     height: 13em;
     width: 100%;
 }
+
 
 .carteactivite2 .imagebottom{
     height: 7em;
@@ -459,6 +455,10 @@ figure img{
 figure{
     border-radius: 1.2em;
     box-shadow: 0.3em 0.3em 0.3em #dddddd; 
+}
+
+figure:hover{
+    box-shadow: 0.8em 0.8em 0.8em #c5c5c5; 
 }
 
 figcaption{
@@ -542,6 +542,7 @@ ul{
         order: -1;
         flex: 2 0 30%;
         justify-content: center;
+        padding: 0;
     }
 
     .recherche{
@@ -661,6 +662,11 @@ ul{
         width: 100%;
     }
 
+    figcaption{
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+        height: 2.5em;
+    }
 
     footer{
         flex-direction: column;
