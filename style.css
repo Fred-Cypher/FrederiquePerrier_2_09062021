@@ -173,10 +173,6 @@ button:hover{
     border-bottom-right-radius: 0.7em;
 }
 
-.texte:hover{
-    font-size: 0.95em;
-}
-
 .loupe{
     visibility:hidden;
 }
