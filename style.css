@@ -112,8 +112,8 @@ nav a:hover{
     font-size: 1.2em;
 }
 
-/*------------ Partie avec filtres ----------*/
 
+/*------------ Partie avec filtres ----------*/
 
 
 .recherche{
@@ -242,6 +242,7 @@ button:hover{
     font-size: 0.9em;
 }
 
+
 /* ---------------------  Partie hébergement ----------------*/
 
 .logement{
@@ -322,6 +323,7 @@ button:hover{
     margin-left: 1.7em;
 }
 
+
 /* ----- Aside ----- */
 
 aside{
@@ -373,7 +375,6 @@ aside{
     margin: 0.6em 1.8em 0.3em 1em;
     line-height: 1.5em;
 }
-
 
 
 /* ----------------- Partie Activités --------------------- */
@@ -466,6 +467,7 @@ figcaption{
     height: 2em;
     font-weight: bold;
 }
+
 
 /*------------ Footer --------------- */
 
@@ -684,6 +686,7 @@ ul{
         margin-bottom: 1em;
     }
 }
+
 
 /*------------- Affichage Tablette ---------- */ 
 
