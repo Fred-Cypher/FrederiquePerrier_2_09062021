@@ -372,7 +372,7 @@ aside{
     flex-direction: column;
     max-height: 8em;
     justify-content: space-between;
-    margin: 0.6em 0.7em 0.3em 1em;
+    margin: 0.6em 0.5em 0.3em 0.5em;
     line-height: 1.5em;
 }
 
