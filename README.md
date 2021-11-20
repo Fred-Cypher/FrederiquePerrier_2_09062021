@@ -23,3 +23,6 @@ Contraintes techniques :
   - utilisation des balises sémantiques, aucune erreur ni alerte au validateur W3C HTML et CSS
   - le site doit être compatible avec les dernières versions de Chrome et Firefox
   - versionner le code sut GitHub ou GitLab
+
+
+Lien vers la page : https://fred-cypher.github.io/FrederiquePerrier_2_09062021/
