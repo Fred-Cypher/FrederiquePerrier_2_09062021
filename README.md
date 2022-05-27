@@ -1,4 +1,4 @@
-# FrederiquePerrier_2_09062021
+# Projet 2 du parcours Développeur Web d'OpenClassrooms
 
 
 Dossier pour le Projet 2 du parcours Développeur Web d'OPenClassRooms : Transformer une maquette
@@ -25,4 +25,4 @@ Contraintes techniques :
   - versionner le code sut GitHub ou GitLab
 
 
-Lien vers la page : https://fred-cypher.github.io/FrederiquePerrier_2_09062021/
+Lien vers la page : https://fred-cypher.github.io/P2-Reservia/
